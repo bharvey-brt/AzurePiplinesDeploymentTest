@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SampleService.Controllers
 {
-    //wow
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
