@@ -14,3 +14,5 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
   workingDirectory: SampleService/SampleService
 - script: docker build -t bharveybrt/sampleservice .
+  displayName: 'docker image build and push'
+  workingDirectory: SampleService/SampleService
