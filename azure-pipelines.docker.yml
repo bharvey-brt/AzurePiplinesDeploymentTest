@@ -14,5 +14,10 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
   workingDirectory: SampleService/SampleService
 - script: docker build -t bharveybrt/sampleservice .
-  displayName: 'docker image build and push'
+  displayName: 'docker image build'
+  workingDirectory: SampleService/SampleService
+- script: |
+    docker login -u bharveybrt -p iamthetrueme123456$
+    docker push bharveybrt/sampleservice
+  displayName: 'push docker image to dockerhub'
   workingDirectory: SampleService/SampleService
