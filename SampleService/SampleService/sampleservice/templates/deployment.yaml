@@ -5,8 +5,8 @@ metadata:
   labels:
     app: {{ template "sampleservice.name" . }}
     chart: {{ template "sampleservice.chart" . }}
-    release: {{ .Release.Name | lower}}
-    heritage: {{ .Release.Service | lower}}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -17,7 +17,7 @@ spec:
     metadata:
       labels:
         app: {{ template "sampleservice.name" . }}
-        release: {{ .Release.Name | lower}}
+        release: {{ .Release.Name }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
