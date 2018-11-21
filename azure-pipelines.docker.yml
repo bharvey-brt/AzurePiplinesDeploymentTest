@@ -22,9 +22,8 @@ steps:
   displayName: 'push docker image to dockerhub'
   workingDirectory: SampleService/SampleService
 - task: CopyFiles@2
-  workingDirectory: SampleService/SampleService
   inputs:
-    contents: ./
+    contents: SampleService/SampleService
     targetFolder: $(Build.ArtifactStagingDirectory)
 - task: PublishBuildArtifacts@1
   inputs:
