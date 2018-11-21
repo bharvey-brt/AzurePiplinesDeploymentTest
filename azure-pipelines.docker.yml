@@ -21,6 +21,10 @@ steps:
     docker push bharveybrt/sampleservice
   displayName: 'push docker image to dockerhub'
   workingDirectory: SampleService/SampleService
+- task: CopyFiles@2
+  inputs:
+    contents: ./
+    targetFolder: $(Build.ArtifactStagingDirectory)
 - task: PublishBuildArtifacts@1
   inputs:
     pathtoPublish: $(Build.ArtifactStagingDirectory)
