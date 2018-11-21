@@ -21,10 +21,12 @@ steps:
     docker push bharveybrt/sampleservice
   displayName: 'push docker image to dockerhub'
   workingDirectory: SampleService/SampleService
+# other fucking build steps to actually 
+# dynamically package the helm chart will go here soon
 - task: CopyFiles@2
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)'
-    contents: '*'
+    contents: '**\*.tgz'
     targetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
