@@ -8,8 +8,8 @@ metadata:
   labels:
     app: {{ template "sampleservice.name" . }}
     chart: {{ template "sampleservice.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
+    release: {{ .Release.Name | lower}}
+    heritage: {{ .Release.Service | lower}}
 {{- with .Values.ingress.annotations }}
   annotations:
 {{ toYaml . | indent 4 }}

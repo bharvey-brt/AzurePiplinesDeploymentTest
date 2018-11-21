@@ -5,8 +5,8 @@ metadata:
   labels:
     app: {{ template "sampleservice.name" . }}
     chart: {{ template "sampleservice.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
+    release: {{ .Release.Name | lower}}
+    heritage: {{ .Release.Service | lower}}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -16,4 +16,4 @@ spec:
       name: http
   selector:
     app: {{ template "sampleservice.name" . }}
-    release: {{ .Release.Name }}
+    release: {{ .Release.Name | lower}}
