@@ -12,7 +12,7 @@ spec:
   selector:
     matchLabels:
       app: {{ template "sampleservice.name" . }}
-      release: {{ .Release.Name}}
+      release: {{ .Release.Name }}
   template:
     metadata:
       labels:
