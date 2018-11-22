@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: bharvey
-  tag: sampleservice:latest
+  repository: bharvey/sampleservice
+  tag: latest
   pullPolicy: IfNotPresent
 
 service:
