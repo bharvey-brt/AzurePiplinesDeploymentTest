@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{135D1AB1-FEE8-4D66-BFB1-A8C687CA950B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SampleService/sampleservice/templates/ingress.yaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SampleService/sampleservice/values.yaml">
     <Files>
       <File FileName="SampleService/sampleservice/values.yaml" Line="8" Column="36" />
-      <File FileName="SampleService/sampleservice/templates/ingress.yaml" Line="6" Column="10" />
-      <File FileName="SampleService/sampleservice/templates/service.yaml" Line="4" Column="34" />
-      <File FileName="SampleService/sampleservice/templates/deployment.yaml" Line="4" Column="44" />
+      <File FileName="SampleService/sampleservice/templates/service.yaml" Line="4" Column="27" />
+      <File FileName="SampleService/sampleservice/templates/deployment.yaml" Line="4" Column="27" />
+      <File FileName="SampleService/sampleservice/templates/NOTES.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
