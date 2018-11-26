@@ -14,5 +14,6 @@
 
   <ItemGroup>
     <None Remove="sampleservice-0.1.0.tgz" />
+    <None Remove="sampleservice-0.1.0.tgz" />
   </ItemGroup>
 </Project>
