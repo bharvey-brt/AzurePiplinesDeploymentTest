@@ -21,8 +21,16 @@ steps:
     docker push bharveybrt/sampleservice
   displayName: 'push docker image to dockerhub'
   workingDirectory: SampleService/SampleService
-# other fucking build steps to actually 
-# dynamically package the helm chart will go here soon
+- task: HelmInstaller@0
+  inputs:
+    helmVersion: '2.9.1'
+    installKubectl: false
+- task: HelmDeploy@0
+  inputs:
+    connectionType: 'None'
+    command: 'package'
+    chartType: 'filepath'
+    chartPath: '$(Build.SourcesDirectory)/SampleService/SampleService/sampleservice'
 - task: CopyFiles@2
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)'

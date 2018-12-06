@@ -1,10 +1,8 @@
 ﻿<Properties StartupConfiguration="{135D1AB1-FEE8-4D66-BFB1-A8C687CA950B}|Default">
   <MonoDevelop.Ide.ItemProperties.SampleService FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SampleService/sampleservice/templates/deployment.yaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SampleService/Startup.cs">
     <Files>
-      <File FileName="SampleService/sampleservice/values.yaml" Line="16" Column="6" />
-      <File FileName="SampleService/sampleservice/templates/service.yaml" Line="20" Column="1" />
-      <File FileName="SampleService/sampleservice/templates/deployment.yaml" Line="9" Column="37" />
+      <File FileName="SampleService/Controllers/ValuesController.cs" Line="21" Column="28" />
       <File FileName="SampleService/Startup.cs" Line="43" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
