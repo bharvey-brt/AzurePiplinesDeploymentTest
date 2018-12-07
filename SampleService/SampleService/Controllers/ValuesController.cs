@@ -15,7 +15,7 @@ namespace SampleService.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "demo", "deploy" };
+            return new string[] { "value_01", "value_02" };
         }
     }
 }
